@@ -4,6 +4,7 @@
 import sys
 
 from readFiles import readInput
+from timeFunctions.getDifference import differenceInTimes
 
 INPUT_FILE = './Test_cases/Input.txt'
 DEMO_FILE = './Test_cases/Demo.txt'
@@ -18,5 +19,7 @@ if __name__ == '__main__':
     # Get the times
     times = readInput(DEMO_FILE)
 
-    for time in times:
-      print(time)
+    differenceInTimes(times)
+
+    sys.stdout = original_stdout
+    fptr.close()
