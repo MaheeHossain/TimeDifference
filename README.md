@@ -1,2 +1,3 @@
 # TimeDifference
-Take two times and tell the difference in date
+Takes two times from two dates and tells how much time has passed
+Hard code important dates and events 
